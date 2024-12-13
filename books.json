@@ -13,10 +13,10 @@
         "title": "7",
         "author": "7",
         "isbn": 13284,
-        "year": 7,
-        "price": 7,
-        "quantity": 7,
+        "year": 45,
+        "price": 45,
+        "quantity": 4,
         "bookAddedAt": "13-12-2024 20:04:44",
-        "bookLastUpdatedAt": ""
+        "bookLastUpdatedAt": "13-12-2024 20:22:25"
     }
 ]
