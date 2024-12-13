@@ -3,6 +3,7 @@ from add import add_books
 from view import book_view
 from restore import restore_book
 from delete import delete_books
+from update import update_books
 
 all_books = []
 
@@ -28,12 +29,10 @@ while True:
         # for b in all_books:
         #     print(b)
         book_view()
-
-    #     view_all_books.view_all_books(all_books)
-    # elif menu == "3":
-    #     update_book_file.update_books(all_books)
+    elif menu == "3":
+        update_books(all_books)
     elif menu == "4":
         delete_books(all_books)
-    # else:
-    #     print("Choose a valid number")
+    else:
+        print("Choose a valid number")
 
