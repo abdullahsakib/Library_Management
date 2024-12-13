@@ -3,11 +3,11 @@ import json
 
 def book_view():
     with open("books.json",'r') as file:
-        books =json.load(file)
+        all_books =json.load(file)
 
-    if books!=[]:
-        for b in books:
-            print(b)
+    if all_books != []:
+        for book in all_books:
+            print(f"Title: {book['title']} | Author: {book['author']} | ISBN: {book['isbn']} | Year: {book['year']} | Price: {book['price']} | Quantity: {book['quantity']} | Book Added At: {book['bookAddedAt']} | Book Last Updated At: {book['bookLastUpdatedAt']}")
     else:
-        print('no book found')
+        print("No Book found.")
 

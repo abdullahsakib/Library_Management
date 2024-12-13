@@ -9,13 +9,13 @@ def add_books(all_books):
     year = int(input("Enter Publishing Year Number: "))
     price = int(input("Enter Book Price: "))
 
-    # while True:
-    #     try:
+    while True:
+        try:
 
-    #         quantity = int(input("Enter Quantity Number: "))
-    #         break
-    #     except ValueError:
-    #         print("Invalid input. Please enter a valid integer.")
+            quantity = int(input("Enter Quantity Number: "))
+            break
+        except ValueError:
+            print("Invalid input. Please enter a valid integer.")
 
 
     isbn = random.randint(10000, 99999)
@@ -27,7 +27,7 @@ def add_books(all_books):
         "isbn": isbn,
         "year": year,
         "price": price,
-        #"quantity": quantity,
+        "quantity": quantity,
         "bookAddedAt": bookAddedAt,
         "bookLastUpdatedAt": ""
     }
