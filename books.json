@@ -25,5 +25,14 @@
         "price": 7,
         "bookAddedAt": "13-12-2024 11:51:13",
         "bookLastUpdatedAt": ""
+    },
+    {
+        "title": "4",
+        "author": "8",
+        "isbn": 61454,
+        "year": 8,
+        "price": 8,
+        "bookAddedAt": "13-12-2024 12:53:18",
+        "bookLastUpdatedAt": ""
     }
 ]
