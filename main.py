@@ -1,6 +1,7 @@
 
 from add import add_books
 from view import book_view
+from restore import restore_book
 
 all_books = []
 
@@ -12,7 +13,8 @@ while True:
     print("3. Book Update")
     print("4. Book Remove/Delete")
 
-    #all_books = restore_books_file.restore_all_books(all_books)
+    all_books=restore_book()
+
     
     menu = input("Select any number: ")
     
@@ -22,7 +24,9 @@ while True:
     elif menu == "1":
         all_books = add_books(all_books)
     elif menu == "2":
-        book_view
+        # for b in all_books:
+        #     print(b)
+        book_view()
 
     #     view_all_books.view_all_books(all_books)
     # elif menu == "3":

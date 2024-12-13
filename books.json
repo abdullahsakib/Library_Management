@@ -7,5 +7,23 @@
         "price": 7,
         "bookAddedAt": "12-12-2024 21:53:18",
         "bookLastUpdatedAt": ""
+    },
+    {
+        "title": "4",
+        "author": "4",
+        "isbn": 22442,
+        "year": 4,
+        "price": 4,
+        "bookAddedAt": "13-12-2024 11:51:05",
+        "bookLastUpdatedAt": ""
+    },
+    {
+        "title": "7",
+        "author": "7",
+        "isbn": 79145,
+        "year": 7,
+        "price": 7,
+        "bookAddedAt": "13-12-2024 11:51:13",
+        "bookLastUpdatedAt": ""
     }
 ]
