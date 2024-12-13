@@ -4,8 +4,10 @@ from view import book_view
 from restore import restore_book
 from delete import delete_books
 from update import update_books
+from lend import lend_book, load_lends, save_lends
 
 all_books = []
+lends=load_lends()
 
 while True:
     print("Welcome to Library Management System")
@@ -33,6 +35,11 @@ while True:
         update_books(all_books)
     elif menu == "4":
         delete_books(all_books)
+
+    elif menu == "5":
+        def lend_book(all_books,lends)
+   
+
     else:
         print("Choose a valid number")
 

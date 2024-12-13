@@ -11,7 +11,6 @@ def add_books(all_books):
 
     while True:
         try:
-
             quantity = int(input("Enter Quantity Number: "))
             break
         except ValueError:
