@@ -3,13 +3,12 @@ from datetime import datetime, timedelta
 from save import save_book
 
 def load_lends():
-    with open("lends.json", 'r') as file:
-        lends=json.load(file)
-    if l !=[]:
-        for l in lends:
-            print(l)
-    else:
-        print("no book lended")
+    try:
+        with open("lends.json", 'r') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return []
+
 
 def save_lends(lends):
     with open("lends.json", 'w') as file:
