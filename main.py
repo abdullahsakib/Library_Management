@@ -37,7 +37,7 @@ while True:
         delete_books(all_books)
 
     elif menu == "5":
-        def lend_book(all_books,lends)
+        lend_book(all_books,lends)
    
 
     else:
