@@ -8,5 +8,15 @@
         "quantity": 5,
         "bookAddedAt": "13-12-2024 20:04:12",
         "bookLastUpdatedAt": ""
+    },
+    {
+        "title": "7",
+        "author": "4",
+        "isbn": 75349,
+        "year": 4,
+        "price": 4,
+        "quantity": 3,
+        "bookAddedAt": "13-12-2024 22:38:13",
+        "bookLastUpdatedAt": ""
     }
 ]

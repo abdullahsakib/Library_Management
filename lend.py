@@ -39,4 +39,32 @@ def lend_book(all_books,lends):
             
             print(f"Book '{title}' lent successfully to {borrower_name}. Due date: {return_date}")
 
+def return_book(all_books, lends):
+    title = input("Enter the title of the book to return: ")
+    borrower_name = input("Enter Borrower's Name: ")
+
+    # Find the lend record manually
+    lend_record = None
+    for l in lends:
+        if l["book_title"].lower() == title.lower() and l["borrower_name"].lower() == borrower_name.lower():
+            lend_record = l
+            break
+
+    if not lend_record:
+        print("No matching lend record found.")
+        return
+
+    
+    lends.remove(lend_record)
+
+    
+    for book in all_books:
+        if book["title"].lower() == title.lower():
+            book["quantity"] += 1
+            break
+
+    # Save updates
+    save_book(all_books)
+    save_lends(lends)
+    print(f"Book '{title}' returned successfully by {borrower_name}.")
 
